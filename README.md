@@ -1,4 +1,4 @@
-## Necessary cbanges in pom.xml :
+## Necessary Changes in pom.xml :
 
 Add JaCoCo properties.
 ```
