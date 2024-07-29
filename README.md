@@ -1,4 +1,4 @@
-###  <u>Necessary Changes in pom.xml</u> :
+### Necessary Changes in pom.xml :
 
 Add JaCoCo properties.
 ```
