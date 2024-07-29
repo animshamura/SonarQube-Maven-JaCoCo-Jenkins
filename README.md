@@ -1,4 +1,4 @@
-## Necessary Changes in pom.xml :
+### Necessary Changes in pom.xml :
 
 Add JaCoCo properties.
 ```
@@ -42,7 +42,7 @@ Add plugin that integrates Maven project with JaCoCo.
     </executions>
 </plugin>
 ```
-## Execution in SonarQube Server : 
+### Execution in SonarQube Server : 
 Login to the SonarQube server and create a project manually. Then generate a token and select the build to get the scanner's command. 
 ```
 mvn clean verify sonar:sonar \
@@ -50,6 +50,6 @@ mvn clean verify sonar:sonar \
   -Dsonar.host.url=http://localhost:9000 \
   -Dsonar.login=sqp_5130a3ea46dfc25b69b71d5ad80650ccce49ba38
 ```
-## Execution in Project Directory :
+### Execution in Project Directory :
 
 Open a terminal in the project directory and paste the copied scanner's command and hit apply. Total overview of the project will be available on the SonarQube server as well as a JaCoCo report will be generated in the target folder. 
