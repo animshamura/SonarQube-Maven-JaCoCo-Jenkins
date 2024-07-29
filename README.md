@@ -42,3 +42,13 @@ Add plugin that integrates Maven project with JaCoCo.
     </executions>
 </plugin>
 ```
+## Execution in SonarQube Server: 
+Login to the SonarQube server and create a project manually. Then generate a token and select the build to get the scanner's command. 
+```
+mvn clean verify sonar:sonar \
+  -Dsonar.projectKey=CMS-BE \
+  -Dsonar.host.url=http://localhost:9000 \
+  -Dsonar.login=sqp_5130a3ea46dfc25b69b71d5ad80650ccce49ba38
+```
+
+
